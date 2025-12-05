@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jiří HHroch – Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Personal website of Jiří Hroch – developer, maker, and lifelong learner."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-mark">JR</span>
+        <span class="logo-text">Jiří Hroch</span>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hello, I’m <span class="accent">Jiří</span>.</h1>
+          <p class="hero-subtitle">
+            I’m a <strong>developer</strong> who enjoys building clean,
+            user‑friendly experiences on the web.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View my projects</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="avatar-placeholder">JR</div>
+          <p class="hero-card-text">
+            Based in <span class="accent">Brno, CZ</span>, focused on
+            <span class="accent">web development</span> and continuous learning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <p>
+          I’m a developer interested in building fast, accessible, and
+          maintainable web applications. I enjoy learning new technologies,
+          solving real-world problems, and collaborating with others.
+        </p>
+        <p>
+          When I’m not coding, I like to explore new tools, read about
+          technology and design, and experiment with side projects.
+        </p>
+
+        <div class="grid two-col">
+          <div>
+            <h3>Skills</h3>
+            <ul class="pill-list">
+              <li>HTML5</li>
+              <li>CSS3 / Flexbox / Grid</li>
+              <li>JavaScript</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Currently learning</h3>
+            <ul class="pill-list">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Modern CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>
+              A brief description of your first project. Explain what it does
+              and what you learned while building it.
+            </p>
+            <p class="meta">Tech: HTML, CSS, JavaScript</p>
+            <a href="#" class="card-link">View project</a>
+          </article>
+
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>
+              Another project you’re proud of. Highlight the problems you
+              solved and the tools you used.
+            </p>
+            <p class="meta">Tech: Add your stack</p>
+            <a href="#" class="card-link">View project</a>
+          </article>
+
+          <article class="card">
+            <h3>More coming soon</h3>
+            <p>
+              You can use this space to showcase future work or experiments.
+            </p>
+            <p class="meta">Side projects &amp; experiments</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Want to say hello or talk about a project? Feel free to reach out.
+        </p>
+        <ul class="contact-list">
+          <li>
+            Email:
+            <a href="mailto:jirihroch@icloud.com">jirihroch@icloud.com</a>
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/jhroch" target="_blank"
+              >github.com/jhroch</a
+            >
+          </li>
+          <!-- Add other links like LinkedIn or Twitter here -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jiří Hroch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
