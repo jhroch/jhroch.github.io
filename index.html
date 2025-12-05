@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Jiří HHroch – Personal Site</title>
+  <title>Jiří Hroch – Personal Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
@@ -153,8 +153,20 @@
   </footer>
 
   <script>
-    // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
+  // Set current year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Scrolling page title
+  let baseTitle = " Jiří Hroch – Personal Site 🚀";
+  let pos = 0;
+
+  function scrollTitle() {
+    document.title = baseTitle.substring(pos) + baseTitle.substring(0, pos);
+    pos = (pos + 1) % baseTitle.length;
+    setTimeout(scrollTitle, 200);
+  }
+
+  scrollTitle();
   </script>
 </body>
 </html>
